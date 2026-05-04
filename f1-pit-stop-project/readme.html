@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Pit Stop Prediction</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f5f5f5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #111;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0066cc;
+            margin: 0 8px;
+        }
+
+        .nav-links {
+            margin: 10px 0 20px 0;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #eee;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 class="center">🏎️ F1 Pit Stop Prediction</h1>
+
+    <p class="center">
+        Predicting next-lap pit stop decisions in Formula 1 using machine learning.
+    </p>
+
+    <div class="center nav-links">
+        <a href="f1_claasification.html">View Notebook</a> • 
+        <a href="#key-insight">Key Insight</a> • 
+        <a href="#approach">Approach</a>
+    </div>
+
+    <hr>
+
+    <h2>Overview</h2>
+    <p>
+        This project uses machine learning to predict whether a driver will make a pit stop on the next lap in Formula 1 race data.
+    </p>
+    <p>
+        The model learns from race telemetry such as tyre wear, lap performance, and race context to identify patterns behind strategic pit decisions.
+    </p>
+
+    <h2>Feature Importance</h2>
+
+    <div class="center">
+        <img src="feature_importance.png" alt="Feature Importance Chart">
+    </div>
+
+    <h2 id="key-insight">Key Insight</h2>
+    <p>
+        Pit stop decisions are primarily driven by <strong>performance degradation over time</strong>, particularly changes in lap time and tyre wear progression.
+    </p>
+    <p>
+        Rather than relying on static features like tyre compound, the model captures how race performance evolves—reflecting real-world strategy dynamics.
+    </p>
+
+    <h2 id="approach">Approach</h2>
+    <ul>
+        <li>Data cleaning and preprocessing</li>
+        <li>Exploratory data analysis</li>
+        <li>Feature engineering</li>
+        <li>Classification modeling</li>
+    </ul>
+
+    <h2>Tools</h2>
+    <p>
+        <span class="tag">Python</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">Seaborn</span>
+        <span class="tag">Scikit-learn</span>
+    </p>
+
+    <h2>Future Improvements</h2>
+    <ul>
+        <li>SHAP for feature interpretability</li>
+        <li>Hyperparameter tuning</li>
+        <li>Time-aware sequential modeling</li>
+    </ul>
+
+</div>
+
+</body>
+  </html>

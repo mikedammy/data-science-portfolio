@@ -30,6 +30,24 @@ This portfolio highlights selected projects across classification, time series, 
 <a href="f1-pit-stop-project/f1_classification.html">Notebook (HTML)</a>
 </p>
 
+<h3>Credit Card Clustering</h3>
+
+<p>Segmenting credit card users based on financial behaviour using PCA and K-Means clustering.</p>
+
+<ul>
+    <li><strong>Focus:</strong> spending pattern, credit usage and repayment behaviour.</li>
+    <li><strong>Methods:</strong> Principal Component Analysis, K-Means Clustering, robust scaling, decomposition.</li>
+</ul>
+
+<p>
+<img src="credit-card-clustering/images/cluster_segments.png" alt="Customer Segments">
+</p>
+
+<p>
+<a href="credit-card-clustering/ccc_project.html">Project Overview</a> |
+<a href="credit-card-clustering/ccc_project.html">Notebook (HTML)</a>
+</p>
+
 <hr>
 
 <h2>Upcoming Work</h2>
@@ -43,4 +61,4 @@ This portfolio highlights selected projects across classification, time series, 
 
 <h2>Stack</h2>
 
-<p>Python · Pandas · Scikit-Learn · Matplotlib</p>
+<p>Python · Pandas · Scikit-Learn · Matplotlib · Numpy · Seaborn</p>

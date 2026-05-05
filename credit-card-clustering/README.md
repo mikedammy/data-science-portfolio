@@ -31,7 +31,7 @@ By transforming raw financial data into structured behavioral dimensions using P
 <h2 align="center">Cluster Profiles</h2>
 
 <p align="center">
-<img src="/images/cluster_segments.png" width="700" alt="Customer Cluster Profiles">
+<img src="images/cluster_segments.png" width="700" alt="Customer Cluster Profiles">
 </p>
 
 ---

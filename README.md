@@ -30,6 +30,8 @@ This portfolio highlights selected projects across classification, time series, 
 <a href="f1-pit-stop-project/f1_classification.html">Notebook (HTML)</a>
 </p>
 
+<hr>
+
 <h3>Credit Card Clustering</h3>
 
 <p>Segmenting credit card users based on financial behaviour using PCA and K-Means clustering.</p>

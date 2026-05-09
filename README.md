@@ -47,7 +47,7 @@ This portfolio highlights selected projects across classification, time series, 
 
 <p>
 <a href="credit-card-clustering/ccc_project.html">Project Overview</a> |
-<a href="credit-card-clustering/ccc_project.html">Notebook (HTML)</a>
+<a href="credit-card-clustering/credit_card_clustering_project.html">Notebook (HTML)</a>
 </p>
 
 <hr>

@@ -1,75 +1,98 @@
-# Ames Housing Price Prediction
+<div align="center">
 
-## Overview
+<h1>Ames Housing Price Prediction</h1>
 
-This project builds an end-to-end supervised machine learning pipeline to predict house prices using the Ames Housing dataset. The dataset contains a high-dimensional mix of numerical, ordinal, and categorical variables describing residential properties.
+<p>
+End-to-end regression pipeline for predicting house prices using feature engineering, regularized linear models, and error analysis.
+</p>
 
-The goal is to build a robust regression system capable of generalizing across heterogeneous housing structures while handling multicollinearity, skewed distributions, and nonlinear feature interactions.
+<p>
+<a href="ames_housing_project.html">View Notebook</a> •
+<a href="#key-insight">Key Insight</a> •
+<a href="#approach">Approach</a>
+</p>
 
----
+</div>
 
-## Key Insight
+<hr>
 
-House prices are primarily driven by structural quality, living area, and neighborhood effects, but the relationship is not purely linear, especially in the upper price range.
+<h2>Overview</h2>
 
-Regularized linear models perform well on the central distribution of the dataset but show increasing error in high-value properties, indicating that luxury housing behaves as a distinct regime with stronger nonlinear dependencies.
+<p>
+This project builds a supervised machine learning pipeline to predict housing prices using the Ames Housing dataset. The dataset contains a high-dimensional mix of numerical, ordinal, and categorical features describing residential properties.
+</p>
 
----
-
-## Approach
-
-- Data cleaning and missing value handling  
-- Ordinal encoding for hierarchical categorical variables  
-- One-hot encoding for nominal features  
-- Feature engineering (age-based variables, binary indicators, and aggregated features)  
-- Log and square-root transformations for skewed numerical variables  
-- Multicollinearity reduction through feature pruning and derivation  
-- Model training (Linear Regression, Ridge, Lasso, ElasticNet, Random Forest, Gradient Boosting)  
-- Residual diagnostics and error segmentation  
-
----
-
-## Model Results
-
-- Linear Regression: Baseline model with moderate bias and limited flexibility  
-- Ridge Regression: Improved stability but similar predictive performance  
-- Lasso Regression: Feature sparsity introduced without major performance gains  
-- ElasticNet: Best-performing linear model with balanced regularization  
-- Random Forest: Strong training performance but significant overfitting  
-- Gradient Boosting: High variance and unstable generalization  
-
-ElasticNet was selected as the final model due to its best balance between stability and generalization.
+<p>
+The objective is to construct a robust regression model capable of generalizing across heterogeneous housing characteristics while handling multicollinearity, skewed distributions, and nonlinear feature interactions.
+</p>
 
 ---
 
-## Key Findings from Residual Analysis
+<h2 align="center">Model Performance</h2>
 
-Residual diagnostics revealed:
-
-- Errors are centered around zero for most predictions  
-- Strong right-skew in residual distribution due to under-prediction of high-value homes  
-- Increasing error variance with price (heteroscedasticity)  
-- Isolated extreme residuals rather than systematic structural drift  
-
-This indicates that model limitations are concentrated in the upper tail of the price distribution rather than uniformly across all observations.
+<p align="center">
+<img src="error_segment_chart.png" width="700" alt="Actual vs Predicted Prices">
+</p>
 
 ---
 
-## Tools
+<h2 id="key-insight">Key Insight</h2>
 
-- Python  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Matplotlib  
-- Seaborn  
+<p>
+House prices are primarily driven by structural quality, living area, and neighborhood effects, but the relationship becomes increasingly nonlinear in the upper price range.
+</p>
+
+<p>
+Linear regularized models perform well on the central distribution of the dataset but show systematic under-prediction for high-value properties, indicating a distinct behavior regime for luxury housing.
+</p>
 
 ---
 
-## Future Improvements
+<h2 id="approach">Approach</h2>
 
-- Apply log transformation to target variable to stabilize variance  
-- Introduce interaction features (e.g., quality × area effects)  
-- Explore stronger gradient boosting regularization strategies  
-- Investigate quantile regression for tail performance  
-- Deploy model as an interactive prediction interface
+<ul>
+<li>Data cleaning and missing value handling</li>
+<li>Ordinal encoding for hierarchical categorical variables</li>
+<li>One-hot encoding for nominal features</li>
+<li>Feature engineering (age-based variables, binary indicators, and aggregated features)</li>
+<li>Log and root transformations for skewed numerical variables</li>
+<li>Multicollinearity reduction through feature pruning and derived variables</li>
+<li>Model training (Linear Regression, Ridge, Lasso, ElasticNet, Random Forest, Gradient Boosting)</li>
+<li>Residual diagnostics and error segmentation</li>
+</ul>
+
+---
+
+<h2>Model Results</h2>
+
+<ul>
+<li>Linear Regression: baseline model with moderate bias</li>
+<li>Ridge Regression: improved stability with similar predictive performance</li>
+<li>Lasso Regression: feature sparsity with no major performance gain</li>
+<li>ElasticNet: best-performing linear model with balanced regularization</li>
+<li>Random Forest: strong training performance but severe overfitting</li>
+<li>Gradient Boosting: high variance and unstable generalization</li>
+</ul>
+
+<p>
+ElasticNet was selected as the final model due to the best trade-off between bias, variance, and generalization stability.
+</p>
+
+---
+
+<h2>Tools</h2>
+
+<p>
+Python • Pandas • NumPy • Scikit-learn • Matplotlib • Seaborn
+</p>
+
+---
+
+<h2>Future Improvements</h2>
+
+<ul>
+<li>Interaction feature engineering (e.g., quality × area effects)</li>
+<li>Stronger regularization for boosting models</li>
+<li>Quantile regression for better tail performance</li>
+<li>Deployment as an interactive prediction system</li>
+</ul>

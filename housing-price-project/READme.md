@@ -55,7 +55,7 @@ Linear regularized models perform well on the central distribution of the datase
 <li>Ordinal encoding for hierarchical categorical variables</li>
 <li>One-hot encoding for nominal features</li>
 <li>Feature engineering (age-based variables, binary indicators, and aggregated features)</li>
-<li>Log and root transformations for skewed numerical variables</li>
+<li>Log transformations for skewed numerical variables</li>
 <li>Multicollinearity reduction through feature pruning and derived variables</li>
 <li>Model training (Linear Regression, Ridge, Lasso, ElasticNet, Random Forest, Gradient Boosting)</li>
 <li>Residual diagnostics and error segmentation</li>

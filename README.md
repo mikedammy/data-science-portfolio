@@ -52,11 +52,29 @@ This portfolio highlights selected projects across classification, time series, 
 
 <hr>
 
+<h3>Ames Housing Price Prediction</h3>
+
+<p>Predicting house prices in Ames, Iowa using various house features.</p>
+
+<ul>
+    <li><strong>Focus:</strong> feature engineering and error behaviour in high value houses.</li>
+    <li><strong>Methods:</strong> Variance Inflation Factors, Linear Regression, robust scaling, Regularization.</li>
+</ul>
+
+<p>
+<img src="housing-price-project/error_segment_chart.png" alt="Error Segments by type.">
+</p>
+
+<p><a href="housing-price-project/ames-webpage.html">Project Overview</a> |
+<a href="housing-price-project/ames-housing_project.html">Notebook (HTML)</a>
+</p>
+
+<hr>
+
 <h2>Upcoming Work</h2>
 
 <ul>
     <li>Retail Demand Forecasting (Time Series)</li>
-    <li>Customer Segmentation (Clustering & PCA)</li>
 </ul>
 
 <hr>

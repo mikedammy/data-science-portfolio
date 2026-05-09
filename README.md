@@ -66,7 +66,7 @@ This portfolio highlights selected projects across classification, time series, 
 </p>
 
 <p><a href="housing-price-project/ames-webpage.html">Project Overview</a> |
-<a href="housing-price-project/ames-housing_project.html">Notebook (HTML)</a>
+<a href="housing-price-project/ames_housing_project.html">Notebook (HTML)</a>
 </p>
 
 <hr>

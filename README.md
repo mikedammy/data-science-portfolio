@@ -103,4 +103,4 @@ This portfolio highlights selected projects across classification, time series, 
 
 <h2>Stack</h2>
 
-<p>Python · Pandas · Scikit-Learn · Matplotlib · Numpy · Seaborn</p>
+<p>Python · Pandas · Scikit-Learn · Matplotlib · Numpy · Seaborn · XGBoost · PyTorch </p>

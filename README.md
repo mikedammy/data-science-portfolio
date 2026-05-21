@@ -71,6 +71,28 @@ This portfolio highlights selected projects across classification, time series, 
 
 <hr>
 
+<hr>
+
+<h3>Election Fraud Detection</h3>
+
+<p>Detecting fraudulent electoral activity using machine learning and adversarial election analytics.</p>
+
+<ul>
+    <li><strong>Focus:</strong> fraud detection under class imbalance, multicollinearity, and noisy adversarial data</li>
+    <li><strong>Methods:</strong> XGBoost, HistGradientBoosting, feature engineering, threshold tuning</li>
+</ul>
+
+<p>
+<img src="electoral-fraud-project/decision_threshold.png" alt="Election Fraud Detection Chart">
+</p>
+
+<p>
+<a href="electoral-fraud-project/webpage.html">Project Overview</a> |
+<a href="electoral-fraud-project/electoral_fraud_project.html">Notebook (HTML)</a>
+</p>
+
+<hr>
+
 <h2>Upcoming Work</h2>
 
 <ul>

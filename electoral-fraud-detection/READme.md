@@ -76,7 +76,6 @@ The final optimized XGBoost pipeline prioritized fraud recall over raw accuracy,
 
 ## Project Notebook
 
-```html
 <a href="electoral_fraud_project.html">
     View Full Notebook
 </a>

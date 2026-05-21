@@ -83,11 +83,11 @@ This portfolio highlights selected projects across classification, time series, 
 </ul>
 
 <p>
-<img src="electoral-fraud-project/decision_threshold.png" alt="Election Fraud Detection Chart">
+<img src="electoral-fraud-detection/decision_threshold.png" alt="Election Fraud Detection Chart">
 </p>
 
 <p>
-<a href="electoral-fraud-project/webpage.html">Project Overview</a> |
+<a href="electoral-fraud-detection/webpage.html">Project Overview</a> |
 <a href="electoral-fraud-project/electoral_fraud_project.html">Notebook (HTML)</a>
 </p>
 

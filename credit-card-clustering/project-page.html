@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Detail | Customer Segmentation</title>
+    <link rel="stylesheet" type="text/css" href="project-page.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+<div class="project-page-container">
+
+    <header class="project-header">
+        <h1>Credit Card Customer Segmentation</h1>
+        <p class="project-subtitle">
+            Segmenting credit card users based on financial behavior using PCA and K-Means clustering
+        </p>
+
+        <div class="project-links">
+            <a href="full-notebook.html">View Notebook</a>
+            <a href="#key-insight">Key Insight</a>
+            <a href="#approach">Approach</a>
+        </div>
+    </header>
+
+    <section class="project-banner">
+        <div class="image-frame">
+            <img src="customer_clusters.png" alt="Customer Segmentation Clusters"/>
+        </div>
+    </section>
+
+    <div class="project-layout">
+
+        <main class="project-content">
+
+            <section id="overview">
+                <h2>Overview</h2>
+                <p>
+                    This project applies unsupervised machine learning techniques to segment credit card customers based on their spending patterns, credit usage, and repayment behavior. 
+                    By transforming raw financial data into structured behavioral dimensions using Principal Component Analysis (PCA), the model identifies distinct customer groups with similar financial characteristics.
+                </p>
+            </section>
+
+            <section id="key-insight">
+                <h2>Key Insight</h2>
+                <p>
+                    Customer behavior is driven by a combination of spending intensity, credit dependency, and repayment discipline rather than any single variable. 
+                    The segmentation reveals clear groups such as low-activity users, high-value spenders, disciplined full payers, and high-risk credit-dependent customers, reflecting real-world financial behavior patterns.
+                </p>
+            </section>
+
+            <section id="approach">
+                <h2>Approach & Methodology</h2>
+                <p>
+                    The analytical pipeline follows a structured unsupervised learning framework to guarantee robust, interpretable cluster boundaries:
+                </p>
+                <div class="chart-container" style="margin-top: 15px;">
+                    <ul style="margin-left: 20px; color: #475569;">
+                        <li style="margin-bottom: 8px;">Data cleaning and preprocessing</li>
+                        <li style="margin-bottom: 8px;">Exploratory data analysis (EDA)</li>
+                        <li style="margin-bottom: 8px;">Feature engineering & scaling</li>
+                        <li style="margin-bottom: 8px;">Principal Component Analysis (PCA) for dimensionality reduction</li>
+                        <li style="margin-bottom: 8px;">K-Means clustering implementation</li>
+                        <li style="margin-bottom: 8px;">Cluster interpretation and profiling</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="future-improvements">
+                <h2>Future Improvements</h2>
+                <p>
+                    To elevate this project further, upcoming milestones include validating clusters using additional statistical metrics, deploying an interactive cluster exploration dashboard via Streamlit, and building a real-time customer classification pipeline integrated with business decision systems.
+                </p>
+            </section>
+
+        </main>
+
+        <aside class="project-sidebar">
+
+            <div class="tech-stack">
+                <h3>Tools & Stack</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Scikit-Learn</li>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                </ul>
+            </div>
+
+            <div class="metrics">
+                <h3>Key Focus</h3>
+                <div class="metrics-grid">
+                    <div>
+                        <strong>Algorithm</strong>
+                        <p>K-Means</p>
+                    </div>
+
+                    <div>
+                        <strong>Reduction</strong>
+                        <p>PCA</p>
+                    </div>
+
+                    <div>
+                        <strong>Task</strong>
+                        <p>Clustering</p>
+                    </div>
+
+                    <div>
+                        <strong>Domain</strong>
+                        <p>Finance</p>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+    </div> </div> </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Detail | F1 Pit Stop Prediction</title>
+    <link rel="stylesheet" type="text/css" href="project-page.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+<div class="project-page-container">
+
+    <header class="project-header">
+        <h1>F1 Pit Stop Prediction</h1>
+        <p class="project-subtitle">
+            Predicting next-lap pit stop decisions in Formula 1 using machine learning
+        </p>
+
+        <div class="project-links">
+            <a href="f1_claasification.html">View Notebook</a>
+            <a href="#key-insight">Key Insight</a>
+            <a href="#approach">Approach</a>
+        </div>
+    </header>
+
+    <section class="project-banner">
+        <div class="image-frame">
+            <img src="feature_importance.png" alt="Feature Importance Plot"/>
+        </div>
+    </section>
+
+    <div class="project-layout">
+
+        <main class="project-content">
+
+            <section id="overview">
+                <h2>Overview</h2>
+                <p>
+                    This project uses machine learning to predict whether a driver will make a pit stop on the next lap using Formula 1 race data. 
+                    The model learns from race telemetry such as tyre wear, lap performance, and race context to identify patterns behind complex, high-stakes strategic pit decisions.
+                </p>
+            </section>
+
+            <section id="key-insight">
+                <h2>Key Insight</h2>
+                <p>
+                    Pit stop decisions are primarily driven by <strong>performance degradation over time</strong>, particularly changes in lap time and tyre wear progression. 
+                    Rather than relying heavily on static features like the initial tyre compound, the model successfully captures how active race performance evolves—closely reflecting real-world track strategy dynamics.
+                </p>
+            </section>
+
+            <section id="approach">
+                <h2>Approach</h2>
+                <p>
+                    The project was executed through a structured data science lifecycle optimized for sports telemetry analytics:
+                </p>
+                <div class="chart-container" style="margin-top: 15px;">
+                    <ul style="margin-left: 20px; color: #475569;">
+                        <li style="margin-bottom: 8px;">Data cleaning and preprocessing</li>
+                        <li style="margin-bottom: 8px;">Exploratory data analysis (EDA)</li>
+                        <li style="margin-bottom: 8px;">Feature engineering (capturing temporal degradation dynamics)</li>
+                        <li style="margin-bottom: 8px;">Classification modeling</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="future-improvements">
+                <h2>Future Improvements</h2>
+                <p>
+                    To advance the accuracy and deployment value of the framework, upcoming phases will introduce SHAP (SHapley Additive exPlanations) values for structural feature interpretability, algorithmic hyperparameter tuning, and time-aware sequential modeling to capture real-time racing stints.
+                </p>
+            </section>
+
+        </main>
+
+        <aside class="project-sidebar">
+
+            <div class="tech-stack">
+                <h3>Tools & Stack</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>Scikit-Learn</li>
+                    <li>Seaborn</li>
+                </ul>
+            </div>
+
+            <div class="metrics">
+                <h3>Key Focus</h3>
+                <div class="metrics-grid">
+                    <div>
+                        <strong>Task</strong>
+                        <p>Classification</p>
+                    </div>
+
+                    <div>
+                        <strong>Domain</strong>
+                        <p>F1 Racing</p>
+                    </div>
+
+                    <div>
+                        <strong>Input</strong>
+                        <p>Telemetry</p>
+                    </div>
+
+                    <div>
+                        <strong>Target</strong>
+                        <p>Next Lap Pit</p>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+    </div> </div> </body>
+</html>

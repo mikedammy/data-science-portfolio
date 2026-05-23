@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Detail | Ames Housing Prediction</title>
+    <link rel="stylesheet" type="text/css" href="project-page.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+<div class="project-page-container">
+
+    <header class="project-header">
+        <h1>Ames Housing Price Prediction</h1>
+        <p class="project-subtitle">
+            End-to-end regression pipeline for predicting house prices using feature engineering, regularized linear models, and error analysis
+        </p>
+
+        <div class="project-links">
+            <a href="ames_housing_project.html">View Notebook</a>
+            <a href="https://mikedammy.github.io/data-science-portfolio/index.html">Back to Portfolio</a>
+        </div>
+    </header>
+
+    <section class="project-banner">
+        <div class="image-frame">
+            <img src="error_segment_chart.png" alt="Actual vs Predicted Prices - Error Segment Chart"/>
+        </div>
+    </section>
+
+    <div class="project-layout">
+
+        <main class="project-content">
+
+            <section id="overview">
+                <h2>Overview</h2>
+                <p>
+                    This project builds a supervised machine learning pipeline to predict housing prices using the Ames Housing dataset. The dataset contains a high-dimensional mix of numerical, ordinal, and categorical features describing residential properties.
+                </p>
+                <p style="margin-top: 10px;">
+                    The objective is to construct a robust regression model capable of generalizing across heterogeneous housing characteristics while effectively handling multicollinearity, skewed distributions, and nonlinear feature interactions.
+                </p>
+            </section>
+
+            <section id="key-insight">
+                <h2>Key Insight</h2>
+                <p>
+                    House prices are primarily driven by structural quality, living area, and neighborhood effects, but the relationship becomes increasingly nonlinear in the upper price range.
+                </p>
+                <p style="margin-top: 10px;">
+                    Linear regularized models perform exceptionally well on the central distribution of the dataset but show systematic under-prediction for high-value properties, highlighting a distinct behavioral regime for luxury housing markets.
+                </p>
+            </section>
+
+            <section id="approach">
+                <h2>Approach & Pipeline</h2>
+                <p>
+                    The data engineering and modeling lifecycle implemented for this regression framework includes:
+                </p>
+                <div class="chart-container" style="margin-top: 15px;">
+                    <ul style="margin-left: 20px; color: #475569;">
+                        <li style="margin-bottom: 8px;">Data cleaning and missing value handling</li>
+                        <li style="margin-bottom: 8px;">Ordinal encoding for structural hierarchies and one-hot encoding for nominal attributes</li>
+                        <li style="margin-bottom: 8px;">Feature engineering (age-based indicators, binary flags, and aggregated spatial features)</li>
+                        <li style="margin-bottom: 8px;">Log transformations to normalize heavily skewed numerical variables</li>
+                        <li style="margin-bottom: 8px;">Multicollinearity reduction through feature pruning and derived variance metrics</li>
+                        <li style="margin-bottom: 8px;">Comprehensive model benchmark testing across regularized linear and tree-based architectures</li>
+                        <li style="margin-bottom: 8px;">Residual diagnostics and segmented error analysis</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="results">
+                <h2>Model Benchmarking & Results</h2>
+                <p>
+                    Various architectures were evaluated to find the ideal balance between bias, variance, and stability:
+                </p>
+                <div class="chart-container" style="margin-top: 15px;">
+                    <ul style="margin-left: 20px; color: #475569;">
+                        <li style="margin-bottom: 8px;"><strong>Linear Regression:</strong> Served as a baseline model with moderate bias.</li>
+                        <li style="margin-bottom: 8px;"><strong>Ridge Regression:</strong> Improved architectural stability with comparable predictive weights.</li>
+                        <li style="margin-bottom: 8px;"><strong>Lasso Regression:</strong> Enforced feature sparsity without yielding major performance shifts.</li>
+                        <li style="margin-bottom: 8px;"><strong>ElasticNet:</strong> Best-performing linear model, presenting highly balanced L1/L2 regularization.</li>
+                        <li style="margin-bottom: 8px;"><strong>Random Forest / Gradient Boosting:</strong> Faced severe overfitting or volatile generalization spikes.</li>
+                    </ul>
+                </div>
+                <p style="margin-top: 15px; font-weight: 500;">
+                    Conclusion: ElasticNet was selected as the operational deployment model due to its robust trade-off parameters and supreme generalization stability over the validation sets.
+                </p>
+            </section>
+
+            <section id="future-improvements">
+                <h2>Future Improvements</h2>
+                <p>
+                    To resolve performance limits observed on high-value properties, next steps involve targeted interaction feature engineering (e.g., quality × area interaction vectors), optimizing regularization boundaries for boosting algorithms, implementing quantile regression for tail accuracy, and packaging the system into an interactive dashboard.
+                </p>
+            </section>
+
+        </main>
+
+        <aside class="project-sidebar">
+
+            <div class="tech-stack">
+                <h3>Tools & Stack</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Scikit-Learn</li>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                </ul>
+            </div>
+
+            <div class="metrics">
+                <h3>Key Focus</h3>
+                <div class="metrics-grid">
+                    <div>
+                        <strong>Task</strong>
+                        <p>Regression</p>
+                    </div>
+
+                    <div>
+                        <strong>Selected Model</strong>
+                        <p>ElasticNet</p>
+                    </div>
+
+                    <div>
+                        <strong>Focus</strong>
+                        <p>Regularization</p>
+                    </div>
+
+                    <div>
+                        <strong>Domain</strong>
+                        <p>Real Estate</p>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+    </div> </div> </body>
+    </html>
+    

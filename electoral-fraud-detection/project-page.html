@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Detail</title>
+    <link rel="stylesheet" type="text/css" href="project-page.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+<div class="project-page-container">
+
+    <!-- PROJECT TITLE -->
+    <header class="project-header">
+        <h1>Electoral Fraud Detection</h1>
+        <p class="project-subtitle">
+            Machine Learning classification system for detecting fraudulent electoral behavior
+        </p>
+
+        <div class="project-links">
+            <a href="###">GitHub Repository</a>
+            <a href="###">Back to Portfolio</a>
+        </div>
+    </header>
+
+    <!-- BANNER / VISUALIZATION -->
+    <section class="project-banner">
+        <div class="banner-placeholder">
+            <p>Visualization / Banner Placeholder</p>
+        </div>
+    </section>
+
+    <div class="project-layout">
+
+        <!-- MAIN CONTENT -->
+        <main class="project-content">
+
+            <!-- PROBLEM STATEMENT -->
+            <section>
+                <h2>Problem Statement</h2>
+                <p>
+                    Electoral fraud detection is a high-stakes classification problem involving highly imbalanced data.
+                    The objective is to identify fraudulent voting patterns using structured electoral and behavioral features,
+                    while minimizing false negatives due to the critical nature of undetected fraud.
+                </p>
+            </section>
+
+            <!-- DATASET -->
+            <section>
+                <h2>Dataset</h2>
+                <p>
+                    The dataset consists of synthetic electoral behavior features including vote distribution ratios,
+                    polarization indices, turnout timing patterns, and EVM vs postal vote proportions.
+                    The target variable is a binary classification label indicating fraudulent or legitimate elections.
+                </p>
+            </section>
+
+            <!-- METHODOLOGY -->
+            <section>
+                <h2>Methodology</h2>
+                <p>
+                    The project follows a standard supervised machine learning pipeline including data cleaning,
+                    feature engineering, and model training. Multiple models were evaluated including Logistic Regression,
+                    Random Forest, Gradient Boosting, XGBoost, and a PyTorch neural network.
+                    Class imbalance was addressed through threshold tuning and performance-sensitive evaluation.
+                </p>
+            </section>
+
+            <!-- MODEL RESULTS -->
+            <section>
+                <h2>Model Comparison / Results</h2>
+                <p>
+                    Models were evaluated primarily using recall due to the asymmetric cost of false negatives.
+                    XGBoost and ensemble-based methods performed best under imbalanced conditions.
+                </p>
+
+                <div class="chart-placeholder">
+                    <p>ROC Curve / Model Comparison Chart Placeholder</p>
+                </div>
+            </section>
+
+            <!-- KEY FINDINGS -->
+            <section>
+                <h2>Key Findings</h2>
+                <p>
+                    Threshold optimization significantly improved fraud detection recall.
+                    Tree-based ensemble models consistently outperformed neural networks on tabular structured data.
+                    Feature engineering had a greater impact on performance than model complexity.
+                </p>
+            </section>
+
+            <!-- LIMITATIONS -->
+            <section>
+                <h2>Challenges & Limitations</h2>
+                <p>
+                    The dataset is synthetic, limiting real-world generalization.
+                    Class imbalance introduced evaluation instability across metrics.
+                    Limited feature diversity constrained deeper behavioral modeling.
+                </p>
+            </section>
+
+        </main>
+
+        <!-- SIDEBAR -->
+        <aside class="project-sidebar">
+
+            <div class="tech-stack">
+                <h3>Tech Stack</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Scikit-Learn</li>
+                    <li>XGBoost</li>
+                    <li>PyTorch</li>
+                    <li>Matplotlib</li>
+                </ul>
+            </div>
+
+            <div class="metrics">
+                <h3>Key Metric</h3>
+                <div class="metrics-grid">
+                <div>
+                    <strong>Recall</strong>
+                    <p>~80%</p>
+                </div>
+
+                <div>
+                    <strong>Model</strong>
+                    <p>XGBoost</p>
+                </div>
+
+                <div>
+                    <strong>Focus</strong>
+                    <p>Fraud Detection</p>
+                </div>
+
+                <div>
+                    <strong>Data Type</strong>
+                    <p>Tabular</p>
+                </div>
+            </div>
+            </div>
+
+        </aside>
+
+    </div>
+
+</div>
+
+</body>
+</html>

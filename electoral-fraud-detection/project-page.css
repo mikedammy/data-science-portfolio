@@ -100,20 +100,21 @@ body {
 
 .image-frame {
     width: 100%;
-    height: 260px;              /* critical: controls chaos */
-    background-color: #e2e8f0;
+    height: 320px;              /* critical: controls chaos */
+    background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #e2e8f0;
 }
 
 
 .image-frame img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;  /* prevents cropping + overflow */
     display: block;
 }
@@ -204,7 +205,7 @@ body {
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-    width: 10%;
+    width: 100%;
     box-sizing: border-box;
 }
 

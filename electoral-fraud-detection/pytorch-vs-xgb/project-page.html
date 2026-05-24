@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Detail</title>
+    <link rel="stylesheet" type="text/css" href="project-page.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+<div class="project-page-container">
+
+    <!-- PROJECT TITLE -->
+    <header class="project-header">
+        <h1>XGBoost vs PyTorch MLP: Tabular Classification Benchmark</h1>
+        <p class="project-subtitle">
+            Comparative analysis of gradient boosting and neural networks on structured tabular data
+        </p>
+
+        <div class="project-links">
+            <a href="pytorch_vs_xgb.html">View Notebook</a>
+            <a href="https://mikedammy.github.io/data-science-portfolio/index.html">Back to Portfolio</a>
+        </div>
+    </header>
+
+    <!-- BANNER / VISUALIZATION -->
+    <section class="project-banner">
+        <div class="image-frame">
+            <img src="decision_threshold_curves.png" alt="Threshold Analysis"/>
+        </div>
+    </section>
+
+    <div class="project-layout">
+
+        <!-- MAIN CONTENT -->
+        <main class="project-content">
+
+            <!-- PROBLEM STATEMENT -->
+            <section>
+                <h2>Problem Statement</h2>
+                <p>
+                    This project investigates the performance differences between XGBoost and a PyTorch-based MLP
+                    on a structured binary classification task. The goal is to evaluate whether deep learning
+                    provides meaningful performance gains over gradient boosting methods on tabular data.
+                </p>
+            </section>
+
+            <!-- DATASET -->
+            <section>
+                <h2>Dataset</h2>
+                <p>
+                    The dataset consists of engineered tabular features representing structured risk and behavioral
+                    indicators. The target variable is binary classification. The feature space includes both
+                    raw variables and composite risk scores designed to capture nonlinear interactions.
+                </p>
+            </section>
+
+            <!-- METHODOLOGY -->
+            <section>
+                <h2>Methodology</h2>
+                <p>
+                    A supervised learning pipeline was implemented including preprocessing, train-test splitting,
+                    and model training. Two primary models were evaluated: XGBoost and a PyTorch Multi-Layer Perceptron (MLP).
+                    Both models were tuned and evaluated under identical data conditions to ensure fair comparison.
+                </p>
+            </section>
+
+            <!-- MODEL RESULTS -->
+            <section>
+                <h2>Model Comparison / Results</h2>
+                <p>
+                    Both models were evaluated using classification reports, ROC-AUC curves, precision-recall analysis,
+                    and decision threshold tuning. Performance across all metrics was closely aligned, with no
+                    significant or consistent advantage observed for either model.
+                </p>
+
+                <div class="chart-container">
+                    <div class="image-frame">
+                        <img src="feature_importance_xgb.png" alt="XGB Feature Importances"/>
+                    </div>
+                </div>
+            </section>
+
+            <!-- KEY FINDINGS -->
+            <section>
+                <h2>Key Findings</h2>
+                <p>
+                    Both models converge to similar decision boundaries on structured data.
+                    XGBoost shows slightly better interpretability through gain-based feature importance,
+                    while the MLP offers no significant predictive advantage in this context.
+                    Feature engineering has a stronger impact on performance than model complexity.
+                </p>
+            </section>
+
+            <!-- LIMITATIONS -->
+            <section>
+                <h2>Challenges & Limitations</h2>
+                <p>
+                    The dataset structure limits the potential advantage of deep learning models.
+                    Both models exhibit similar performance ceilings, suggesting constrained feature separability.
+                    MLP interpretability is indirect and computationally more expensive compared to tree-based methods.
+                </p>
+            </section>
+
+        </main>
+
+        <!-- SIDEBAR -->
+        <aside class="project-sidebar">
+
+            <div class="tech-stack">
+                <h3>Tech Stack</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Scikit-Learn</li>
+                    <li>XGBoost</li>
+                    <li>PyTorch</li>
+                    <li>Matplotlib</li>
+                </ul>
+            </div>
+
+            <div class="metrics">
+                <h3>Key Metrics</h3>
+                <div class="metrics-grid">
+
+                    <div>
+                        <strong>ROC-AUC</strong>
+                        <p>~0.695 (Both Models)</p>
+                    </div>
+
+                    <div>
+                        <strong>Best Model</strong>
+                        <p>Equivalent Performance</p>
+                    </div>
+
+                    <div>
+                        <strong>Data Type</strong>
+                        <p>Tabular</p>
+                    </div>
+
+                    <div>
+                        <strong>Task</strong>
+                        <p>Binary Classification</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </aside>
+
+    </div>
+
+</div>
+
+</body>
+</html>

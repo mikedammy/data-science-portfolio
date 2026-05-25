@@ -12,5 +12,5 @@ Extracurricular,Participation in extracurricular activities,Integer,0=No; 1=Yes
 Sports,Participation in sports,Integer,0=No; 1=Yes
 Music,Participation in music activities,Integer,0=No; 1=Yes
 Volunteering,Participation in volunteering,Integer,0=No; 1=Yes
-GPA,Grade Point Average,Float,2.0–4.0
+GPA,Grade Point Average,Float,0.0–4.0
 GradeClass,Grade classification based on GPA,Integer,0=A (>=3.5); 1=B (3.0–3.49); 2=C (2.5–2.99); 3=D (2.0–2.49); 4=F (<2.0)

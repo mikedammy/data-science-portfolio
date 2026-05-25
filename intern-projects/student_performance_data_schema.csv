@@ -1,0 +1,16 @@
+ColumnName,Description,DataType,PossibleValues/Range
+StudentID,Unique identifier for each student,Integer,1001–3392
+Age,Age of the student,Integer,15–18
+Gender,Gender of the student,Integer,0=Male; 1=Female
+Ethnicity,Ethnicity of the student,Integer,0=Caucasian; 1=African American; 2=Asian; 3=Other
+ParentalEducation,Highest education level of parents,Integer,0=None; 1=High School; 2=Some College; 3=Bachelor's; 4=Higher
+StudyTimeWeekly,Weekly study time in hours,Float,0–20
+Absences,Number of school absences,Integer,0–30
+Tutoring,Tutoring status,Integer,0=No; 1=Yes
+ParentalSupport,Level of parental support,Integer,0=None; 1=Low; 2=Moderate; 3=High; 4=Very High
+Extracurricular,Participation in extracurricular activities,Integer,0=No; 1=Yes
+Sports,Participation in sports,Integer,0=No; 1=Yes
+Music,Participation in music activities,Integer,0=No; 1=Yes
+Volunteering,Participation in volunteering,Integer,0=No; 1=Yes
+GPA,Grade Point Average,Float,2.0–4.0
+GradeClass,Grade classification based on GPA,Integer,0=A (>=3.5); 1=B (3.0–3.49); 2=C (2.5–2.99); 3=D (2.0–2.49); 4=F (<2.0)
